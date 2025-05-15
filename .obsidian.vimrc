@@ -17,6 +17,9 @@ nmap <Space>y 0v$y
 map <Space>p "0p
 map <Space>P "0P
 
+" Search
+map <Space>il /\[\[./+\]\]<CR> " inner link
+
 " Openlink
 exmap openlink obcommand editor:follow-link
 nmap <Space>o :openlink<CR>
@@ -61,7 +64,10 @@ exmap vsplit obcommand workspace:split-vertical
 exmap graph obcommand graph:open-local
 exmap mindmap obcommand obsidian-mind-map:app:markmap-preview
 exmap folder obcommand open-with-default-app:show
+exmap publish obcommand publish:open-in-live-site
 exmap vimrc obcommand templater-obsidian:Config/Template/Actions/open_vimrc.md
+exmap mf obcommand templater-obsidian:Config/Template/Actions/move_to_fragments.md
+exmap mj obcommand templater-obsidian:Config/Template/Actions/move_to_journals.md
 
 " Surround
 exmap surround_wiki surround [[ ]]
